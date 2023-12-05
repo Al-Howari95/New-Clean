@@ -71,7 +71,7 @@ const Login = () => {
       const result = await Swal.fire({
         icon: 'success',
         title: 'Successfully logged in',
-        text: `Welcome ${response.data}`,
+        text: `Welcome`,
         showConfirmButton: true,
         timer: 5000, // Set a timer for 5 seconds (adjust as needed)
         confirmButtonText: 'OK',
@@ -79,6 +79,8 @@ const Login = () => {
 
       if (result.isConfirmed) {
         // Redirect to the home page or perform any other action
+        localStorage.setItem('role',2)
+
         window.location.href = "/";
       }
     }else{
@@ -93,7 +95,7 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+        <div id="Cover" className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
         <div id="CCo" className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <div className="max-w-md mx-auto">
             <div>

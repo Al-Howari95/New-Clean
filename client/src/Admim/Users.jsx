@@ -170,13 +170,13 @@ const Users = () => {
     }
   };
 
-  const handleEdit = (userId) => {
-    console.log(`Edit user with ID ${userId}`);
-  };
+  // const handleEdit = (userId) => {
+  //   console.log(`Edit user with ID ${userId}`);
+  // };
 
-  const isEditingAllowed = () => {
-    return false;
-  };
+  // const isEditingAllowed = () => {
+  //   return false;
+  // };
 
   // Pagination logic
   const indexOfLastUser = currentPage * usersPerPage;
@@ -225,13 +225,13 @@ const Users = () => {
                   {user.phone}
                 </td>
                 <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
-                  <button
+                  {/* <button
                     onClick={() => handleEdit(user.id)}
                     disabled={!isEditingAllowed()}
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded"
                   >
                     Edit
-                  </button>
+                  </button> */}
                   <button
                     onClick={() => handleDelete(user.id)}
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded"

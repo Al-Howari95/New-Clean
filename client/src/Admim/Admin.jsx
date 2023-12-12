@@ -19,7 +19,21 @@ const Admin = () => {
   const history = useNavigate();
   const navigate = useNavigate();
 
-  console.log(page); // fetch products
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1280);
+  const [isSideOpen, setIsSideOpen] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1280);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     axios
       .get("http://localhost:4000/users")
@@ -32,30 +46,21 @@ const Admin = () => {
       });
   }, []);
 
-  // function logout() {
-  //   removeCookie("token");
-  //   history("/");
-  // }
-
   const handleLogout = () => {
     localStorage.removeItem("role");
     navigate("/");
   };
 
-  // to open and close sidebar
-  const [isSideOpen, setIsSideOpen] = useState(true);
   const toggleSidebar = () => {
     setIsSideOpen(!isSideOpen);
   };
 
   return (
     <div className="flex h-full z-50">
-      {/* sidebar */}
       <div
         className={`fixed w-64 h-full bg-white border-r overflow-y-auto ${
-          isSideOpen ? "left-0" : "-left-64"
+          isSideOpen && !isSmallScreen ? "left-0" : "-left-64"
         }`}
-        //   style={{ zIndex: 1000 }} // Set a higher z-index value
       >
         <button
           aria-label="Toggle sidebar"

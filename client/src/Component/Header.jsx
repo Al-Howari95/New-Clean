@@ -152,7 +152,7 @@ useEffect(()=>{
         </div>
         {isNavVisible && (
           <div className="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
-            <div className="text-md font-bold text-blue-700 lg:flex-grow">
+<div className="text-md font-bold text-blue-700 lg:flex-grow mr-48">
               <Link
                 to="/"
                 className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
@@ -186,7 +186,7 @@ useEffect(()=>{
                 Book now
               </Link> */}
             </div>
-      <Search/>
+      {/* <Search/> */}
             <div className="flex ">{NavLogin}</div>
           </div>
         )}

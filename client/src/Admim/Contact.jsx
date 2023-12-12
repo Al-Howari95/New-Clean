@@ -43,15 +43,15 @@ const Users = () => {
     }
   };
 
-  const handleEdit = (userId) => {
-    // Implement your logic for editing a user
-    console.log(`Edit user with ID ${userId}`);
-  };
+  // const handleEdit = (userId) => {
+  //   // Implement your logic for editing a user
+  //   console.log(`Edit user with ID ${userId}`);
+  // };
 
-  const isEditingAllowed = () => {
-    // Replace this with your actual logic
-    return false; // For demonstration purposes, edit is disabled
-  };
+  // const isEditingAllowed = () => {
+  //   // Replace this with your actual logic
+  //   return false; // For demonstration purposes, edit is disabled
+  // };
 
   return (
     <div className="max-w-screen-xl mx-auto mt-8">
@@ -98,13 +98,13 @@ const Users = () => {
                   {user.description}
                 </td>
                 <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
-                  <button
+                  {/* <button
                     onClick={() => handleEdit(user.id)}
                     disabled={!isEditingAllowed()}
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded"
                   >
                     Edit
-                  </button>
+                  </button> */}
                   <button
                     onClick={() => handleDelete(user.id)}
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded"

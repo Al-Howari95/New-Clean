@@ -8,7 +8,7 @@ import Button from "../Component/Button";
 const Categores = () => {
   return (
     <>
-    
+  
    <Cate1/>
    <Cate2/>
    <Cate3/>

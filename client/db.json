@@ -6,7 +6,8 @@
       "password": "Mohammad@1",
       "confirm": "Mohammad@1",
       "phone": "1234568910",
-      "id": 5
+      "id": 5,
+      "avatar": ""
     },
     {
       "username": "Mohammad Al Howari",
@@ -430,12 +431,21 @@
       "password": "Mohammad@1",
       "phone_number": "0700000000",
       "id": 66
+    },
+    {
+      "username": "New User",
+      "email": "newuser@example.com",
+      "phone": "123-456-7890",
+      "id": 67
+    },
+    {
+      "username": "New User",
+      "email": "newuser@example.com",
+      "phone": "123-456-7890",
+      "id": 68
     }
   ],
   "Contact": [
-    {
-      "id": 1
-    },
     {
       "name": "Mohammad",
       "email": "m.howari95@gmail.com",
@@ -503,7 +513,7 @@
   "Sarvices": [
     {
       "id": 1,
-      "title": "Day Services",
+      "title": "Bathroom Cleaning",
       "image": "https://images.seattletimes.com/wp-content/uploads/2018/11/cleaning_1111.jpg?d=780x520",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "20 JD",
@@ -511,7 +521,7 @@
     },
     {
       "id": 2,
-      "title": "Night Services",
+      "title": "Bedroom Cleaning",
       "image": "https://blog.resortchoice.com/wp-content/uploads/2021/02/cleaning-image.jpg",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "30 JD ",
@@ -520,7 +530,7 @@
     {
       "id": 3,
       "image": "https://www.southernliving.com/thmb/h5PutY2bKezJQI5Dya2txst_iRA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1295913560-9c73f0e350984e5bb41d4105e5d3de1c.jpg",
-      "title": "4 hours + 1 hours free",
+      "title": "Floor Care",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "150 JD",
       "description": "Awesome site. on the top advertising a business online includes assembling Having the most keep."
@@ -536,13 +546,13 @@
     {
       "id": 5,
       "image": "https://janiking.ca/wp-content/uploads/2019/06/Green-floor-cleaning.jpg",
-      "title": "Day Services",
+      "title": "Outdoor Areas",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "20 Jd",
       "description": "Awesome site. on the top advertising a business online includes assembling Having the most keep."
     },
     {
-      "title": "Night Services  ",
+      "title": "Laundry",
       "description": "Awesome site. on the top advertising a business online includes assembling Having the most keep.",
       "price": "30 JD",
       "image": "https://nextdaycleaning.com/wp-content/uploads/2020/06/Main-Benefits-of-Residential-Cleaning-Services-1024x663.jpg",
@@ -551,7 +561,7 @@
     {
       "id": 7,
       "image": "https://www.denverhousecleaningpros.com/wp-content/uploads/2019/03/mississippi-residential-cleaning-service.jpg",
-      "title": "4 hours + 1 hours free",
+      "title": "Disinfect High-Touch Surfaces",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "150 JD",
       "description": "Awesome site. on the top advertising a business online includes assembling Having the most keep."
@@ -1077,6 +1087,14 @@
     {
       "cardId": 2,
       "id": 9
+    },
+    {
+      "cardId": 2,
+      "id": 10
+    },
+    {
+      "cardId": 2,
+      "id": 11
     }
   ],
   "bookings": [
@@ -1087,9 +1105,9 @@
       "id": 3
     },
     {
-      "name": "Night Services  ",
-      "price": "30 JD",
-      "image": "https://nextdaycleaning.com/wp-content/uploads/2020/06/Main-Benefits-of-Residential-Cleaning-Services-1024x663.jpg",
+      "name": "Disinfect High-Touch Surfaces",
+      "price": "150 JD",
+      "image": "https://www.denverhousecleaningpros.com/wp-content/uploads/2019/03/mississippi-residential-cleaning-service.jpg",
       "id": 4
     }
   ],
@@ -1119,24 +1137,6 @@
       "id": 4
     },
     {
-      "date": "2023-11-15",
-      "time": "16:13",
-      "location": "صسشسشسشس",
-      "id": 5
-    },
-    {
-      "date": "",
-      "time": "",
-      "location": "",
-      "id": 6
-    },
-    {
-      "date": "2023-12-07",
-      "time": "17:43",
-      "location": "aqaba",
-      "id": 7
-    },
-    {
       "date": "2023-12-07",
       "time": "17:43",
       "location": "aqaba",
@@ -1153,18 +1153,6 @@
       "time": "15:00",
       "location": "zarga",
       "id": 10
-    },
-    {
-      "date": "",
-      "time": "",
-      "location": "",
-      "id": 11
-    },
-    {
-      "date": "2023-12-01",
-      "time": "14:54",
-      "location": "hjkl",
-      "id": 12
     }
   ],
   "payments": [

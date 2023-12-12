@@ -18,14 +18,14 @@ const Submit = () => {
     }
   };
 
-//   const handleDelete = async (userId) => {
-//     try {
-//       await axios.put(`http://localhost:4000/submit/${userId}`);
-//       fetchData(); // Refresh the data after deletion
-//     } catch (error) {
-//       console.error('Error deleting user:', error);
-//     }
-//   };
+  const handleDelete = async (userId) => {
+    try {
+      await axios.delete(`http://localhost:4000/submit/${userId}`);
+      fetchData(); // Refresh the data after deletion
+    } catch (error) {
+      console.error('Error deleting user:', error);
+    }
+  };
 
 //   const handleAddUser = async () => {
 //     // Implement logic to add a new user
@@ -44,15 +44,15 @@ const Submit = () => {
 //     }
 //   };
 
-  const handleEdit = (userId) => {
-    // Implement your logic for editing a user
-    console.log(`Edit user with ID ${userId}`);
-  };
+  // const handleEdit = (userId) => {
+  //   // Implement your logic for editing a user
+  //   console.log(`Edit user with ID ${userId}`);
+  // };
 
-  const isEditingAllowed = () => {
-    // Replace this with your actual logic
-    return false; // For demonstration purposes, edit is disabled
-  };
+  // const isEditingAllowed = () => {
+  //   // Replace this with your actual logic
+  //   return false; // For demonstration purposes, edit is disabled
+  // };
 
   return (
     <div className="max-w-screen-xl mx-auto mt-8">
@@ -75,6 +75,7 @@ const Submit = () => {
               <th className="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">
                 Actions
               </th>
+              
             </tr>
           </thead>
           <tbody className="block md:table-row-group">
@@ -93,12 +94,20 @@ const Submit = () => {
                   {user.location}
                 </td>
                 <td className="p-2 md:border md:border-grey-500 text-left block md:table-cell">
+                <button
+                    onClick={() => handleDelete(user.id)}
+                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded"
+                  >
+                    Delete
+                  </button>
                 </td>
+                
               </tr>
             ))}
           </tbody>
         </table>
         <div className="mt-4">
+          
           {/* <button
             onClick={handleAddUser}
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-500 rounded"

@@ -16,7 +16,7 @@ const Profile = () => {
   });
 
   const [photoPreview, setPhotoPreview] = useState(
-    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    "https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
   );
 
   const handleSelectPhoto = () => {

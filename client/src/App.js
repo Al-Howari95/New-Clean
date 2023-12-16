@@ -20,7 +20,9 @@ import Adminlogin from "./Admim/Adminlogin";
 
 
 
+
 function App() {
+  
 
   const [role, setRole] = useState(0);
 
@@ -96,6 +98,7 @@ function App() {
 <Route path="/Login" element={<Login />} />
           <Route path="/Registration" element={<Registration/>} />
           <Route path="/Adminlogin" element={<Adminlogin/>} />
+
 
 
 </Routes>

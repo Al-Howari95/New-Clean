@@ -393,14 +393,17 @@ const Card2 = () => {
 
   return (
     <div>
-      <h1 data-aos="fade-up">Meet Our Team</h1>
+      <div data-aos="fade-up"></div>
       <br />
+      <br />
+
+
       <br />
       <br />
 
       <div
         id="lk"
-        style={{ marginLeft: "280px" }}
+        // style={{ marginLeft: "280px" }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4"
       >
         {currentItems.map((item, index) => (

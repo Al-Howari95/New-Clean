@@ -1,27 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Search from "./Search";
-import Cookies from 'js-cookie'
+import Cookies from "js-cookie";
 
 const Header = () => {
-
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isNavVisible, setNavVisible] = useState(true);  
-  const [isLoggedIn, setLoggedIn] = useState(true);  
+  const [isNavVisible, setNavVisible] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(true);
   const [userProfileImage, setUserProfileImage] = useState("");
   const navigate = useNavigate();
 
-
-useEffect(()=>{
-
-  const token = Cookies.get('Token');
-  if(token){
-
-    setLoggedIn(true)
-  }
-
-})
-
+  useEffect(() => {
+    const token = Cookies.get("Token");
+    if (token) {
+      setLoggedIn(true);
+    }
+  });
 
   const toggleNav = () => {
     setNavVisible(!isNavVisible);
@@ -35,12 +29,13 @@ useEffect(()=>{
     setDropdownOpen(false);
   };
 
-
   const handleLogin = () => {
     // Perform authentication logic
     // For simplicity, let's assume successful login and set user information
     setLoggedIn(false);
-    setUserProfileImage("https://cdn-icons-png.flaticon.com/256/3135/3135789.png");
+    setUserProfileImage(
+      "https://cdn-icons-png.flaticon.com/256/3135/3135789.png"
+    );
 
     // Redirect to the login page
     navigate("/Login");
@@ -50,19 +45,20 @@ useEffect(()=>{
     // Perform logout logic
     setLoggedIn(false);
     setUserProfileImage("");
-    Cookies.remove('Token');
-    Cookies.remove('user_id');
-
+    Cookies.remove("Token");
+    Cookies.remove("user_id");
   };
 
   const NavLogin = isLoggedIn ? (
     <div className="flex items-center">
-      <Link to="/Profile"><img
-        // src={userProfileImage}
-        src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-        alt="User Profile"
-        className="h-8 w-auto rounded-full mr-2"
-      /></Link>
+      <Link to="/Profile">
+        <img
+          // src={userProfileImage}
+          src="https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
+          alt="User Profile"
+          className="h-8 w-auto rounded-full mr-2"
+        />
+      </Link>
       {/* <span className="text-md font-bold text-blue-700">
         User Name 
       </span> */}
@@ -75,44 +71,43 @@ useEffect(()=>{
     </div>
   ) : (
     <div className="flex ">
-    <div
-      className="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0 relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      Sign in
-      {isDropdownOpen && (
-        <div className="absolute bg-white border rounded mt-2">
-          <Link
-            to="/Login"
-            className=" block px-4 py-2 text-blue-700 hover:bg-blue-700 hover:text-white"
-          >
-           User
-          </Link>
-          <Link
-            to="/Adminlogin"
-            className="block px-4 py-2 text-blue-700 hover:bg-blue-700 hover:text-white"
-          >
-            Admin
-          </Link>
-        </div>
-      )}
+      <div
+        className="block text-md px-4 py-2 rounded text-blue-700 ml-2 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0 relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        Sign in
+        {isDropdownOpen && (
+          <div className="absolute bg-white border rounded mt-2">
+            <Link
+              to="/Login"
+              className=" block px-4 py-2 text-blue-700 hover:bg-blue-700 hover:text-white"
+            >
+              User
+            </Link>
+            <Link
+              to="/Adminlogin"
+              className="block px-4 py-2 text-blue-700 hover:bg-blue-700 hover:text-white"
+            >
+              Admin
+            </Link>
+          </div>
+        )}
+      </div>
+      <Link
+        to="/Registration"
+        className="block text-md px-4 ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
+      >
+        Sign Up
+      </Link>
     </div>
-    <Link
-      to="/Registration"
-      className="block text-md px-4 ml-2 py-2 rounded text-blue-700 font-bold hover:text-white mt-4 hover:bg-blue-700 lg:mt-0"
-    >
-      Sign Up
-    </Link>
-  </div>
-);
+  );
 
-// ... (الكود الحالي)
-
+  // ... (الكود الحالي)
 
   return (
     <div className="sticky top-0 w-full z-50">
-      <nav  
+      <nav
         id="navv"
         className="flex items-center justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
       >
@@ -151,8 +146,8 @@ useEffect(()=>{
           </div>
         </div>
         {isNavVisible && (
-          <div className="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
-<div className="text-md font-bold text-blue-700 lg:flex-grow mr-48">
+          <div id="madia" className="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
+            <div className="text-md font-bold text-blue-700 lg:flex-grow mr-48">
               <Link
                 to="/"
                 className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
@@ -186,7 +181,7 @@ useEffect(()=>{
                 Book now
               </Link> */}
             </div>
-      {/* <Search/> */}
+            {/* <Search/> */}
             <div className="flex ">{NavLogin}</div>
           </div>
         )}

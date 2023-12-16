@@ -55,7 +55,7 @@ const Submit = () => {
   // };
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-8">
+    <div id='table' className="max-w-screen-xl mx-auto mt-8">
       <>
         <table className="w-full md:w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 border-collapse block md:table mx-auto mr-auto">
           <thead className="block md:table-header-group">

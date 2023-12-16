@@ -5,16 +5,20 @@ import Search from "./Search";
 
 
 const Categories = () => {
+  
   const [cardsData, setCardsData] = useState([]);
   const [wishlist, setWishlist] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   const [userFavorites, setUserFavorites] = useState({
     image: "",
     title: "",
     content: "",  
     price: "",
     description: "",
+    
   });
 console.log(wishlist,"ddddddddddddd")
+
   useEffect(() => {
     axios.get('http://localhost:4000/Sarvices')
       .then(response => {
@@ -46,13 +50,38 @@ console.log(wishlist,"ddddddddddddd")
       }
     }
   };
+
+  const handleSearch = () => {
+    axios.get('http://localhost:4000/Sarvices')
+      .then(response => {
+        const filteredCards = response.data.filter(
+          (card) =>
+            card.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            card.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            card.price.toLowerCase().includes(searchTerm.toLowerCase()) 
+
+        );
+        setCardsData(filteredCards);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  };
+  
   
   return (
     <div className="flex flex-col items-center">
       <div>
-        <br></br>
-              <Search/>
-
+      <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="border p-2 rounded-lg mb-4"
+        />
+        <button onClick={handleSearch} className="bg-blue-500 text-white p-2 rounded-lg mb-4 ml-2">
+          Search
+        </button>
         <h1 className="text-3xl font-bold my-4">Hourly Cleaning</h1>
         <h3 className="text-sm text-center text-gray-600 my-6">
           Awesome site. On the top advertising a business online includes
@@ -108,6 +137,7 @@ console.log(wishlist,"ddddddddddddd")
           ))}
         </div>
       </div>
+
     </div>
   );
 };

@@ -367,6 +367,14 @@ h5 {
 
 }
 
+#table {
+  margin-top: 80px;
+}
+
+.log {
+  margin-left: 20px;
+}
+
 .hero-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -490,6 +498,10 @@ background-color:aliceblue ;
   #Clean {
     margin-left: -80px;
   }
+
+  #madia {
+    margin-left: 125px;
+  }
   
 }
 
@@ -536,3 +548,4 @@ background-color:aliceblue ;
 
 
 }
+

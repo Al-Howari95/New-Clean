@@ -555,12 +555,13 @@
       "title": "Laundry",
       "description": "Awesome site. on the top advertising a business online includes assembling Having the most keep.",
       "price": "30 JD",
-      "image": "https://nextdaycleaning.com/wp-content/uploads/2020/06/Main-Benefits-of-Residential-Cleaning-Services-1024x663.jpg",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
+      "image": "https://i2-prod.chroniclelive.co.uk/incoming/article14551943.ece/ALTERNATES/s615/Worker-Mopping-Floor-In-Kitchen.jpg",
       "id": 6
     },
     {
       "id": 7,
-      "image": "https://www.denverhousecleaningpros.com/wp-content/uploads/2019/03/mississippi-residential-cleaning-service.jpg",
+      "image": "https://www.metrogroupqa.com/wp-content/uploads/2020/07/Professional-House-Cleaning-Services-in-North-Ogden-Utah.jpg",
       "title": "Disinfect High-Touch Surfaces",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iusto earum maiores at rem, facere dicta suscipit.",
       "price": "150 JD",
@@ -785,14 +786,17 @@
       "content": "mkfcdsm",
       "rating": 3,
       "id": 14
+    },
+    {
+      "author": "Your Name",
+      "date": "12/14/2023",
+      "content": "ال",
+      "rating": 4,
+      "id": 15
     }
   ],
   "favorites": [],
   "wishlist": [
-    {
-      "cardId": 1,
-      "id": 1
-    },
     {
       "cardId": 2,
       "id": 3
@@ -1095,20 +1099,40 @@
     {
       "cardId": 2,
       "id": 11
+    },
+    {
+      "cardId": 1,
+      "id": 12
+    },
+    {
+      "cardId": 3,
+      "id": 13
+    },
+    {
+      "cardId": 2,
+      "id": 14
+    },
+    {
+      "cardId": 2,
+      "id": 15
+    },
+    {
+      "cardId": 2,
+      "id": 16
     }
   ],
   "bookings": [
     {
-      "name": "Night Services",
+      "name": "Bedroom Cleaning",
       "price": "30 JD ",
       "image": "https://blog.resortchoice.com/wp-content/uploads/2021/02/cleaning-image.jpg",
-      "id": 3
+      "id": 1
     },
     {
-      "name": "Disinfect High-Touch Surfaces",
-      "price": "150 JD",
-      "image": "https://www.denverhousecleaningpros.com/wp-content/uploads/2019/03/mississippi-residential-cleaning-service.jpg",
-      "id": 4
+      "name": "Night Services",
+      "price": "30 JD",
+      "image": "https://www.millcitycleaning.com/wp-content/uploads/2021/10/hire-home-cleaner.jpg",
+      "id": 2
     }
   ],
   "submit": [

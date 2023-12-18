@@ -1,23 +1,21 @@
 import React from "react";
-import Book from "../Component/Book";
+import Why from "./Why";
 import Button from "../Component/Button";
-import Pyment from "../Component/Pyment ";
 import { useEffect } from "react";
 
-
-
-const Books = () => {
+const WhyUse = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
-    
-<Book/>
-<Button/>
-<Pyment/>
-</>
+    <div>
+      <Button/>
+      <Why />
+
+
+      
+    </div>
   );
 };
 
-export default Books;
+export default WhyUse;

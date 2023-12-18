@@ -6,6 +6,7 @@ import Card2 from "../Component/Card2";
 import Hero from "../Component/Hero";
 import Button from "../Component/Button";
 import Oss from "../Component/Oss ";
+// import EE from "../Component/EE";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Card2/>
       <Oss/>
       <Button/>
+      {/* <EE/> */}
 
     </>
   );

@@ -6,6 +6,10 @@ body {
   background-color: aliceblue;
 }
 
+#whyuse {
+  background-color: ghostwhite;
+}
+
 .App {
   text-align: center;
 }
@@ -36,6 +40,10 @@ body {
   color: #61dafb;
 }
 
+.hovered-star {
+  color: #ffcc00; /* أي لون ترغب فيه عند التحويل */
+}
+
 #imageee{
   border-radius: 50%;
   width: 40px;
@@ -50,6 +58,10 @@ body {
   margin-top: -42px;
   margin-left: -4px;
 }
+
+/* #whyUs {
+  margin-bottom: 100px;
+} */
 
 #Howariiii {
   background-color: #282c34;

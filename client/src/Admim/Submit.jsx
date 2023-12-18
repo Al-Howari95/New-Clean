@@ -27,32 +27,6 @@ const Submit = () => {
     }
   };
 
-//   const handleAddUser = async () => {
-//     // Implement logic to add a new user
-//     try {
-//       // Sample data for demonstration purposes
-//       const newUser = {
-//         username: 'New User',
-//         email: 'newuser@example.com',
-//         phone: '123-456-7890',
-//       };
-
-//       await axios.post('http://localhost:4000/Contact', newUser);
-//       fetchData(); // Refresh the data after adding a new user
-//     } catch (error) {
-//       console.error('Error adding user:', error);
-//     }
-//   };
-
-  // const handleEdit = (userId) => {
-  //   // Implement your logic for editing a user
-  //   console.log(`Edit user with ID ${userId}`);
-  // };
-
-  // const isEditingAllowed = () => {
-  //   // Replace this with your actual logic
-  //   return false; // For demonstration purposes, edit is disabled
-  // };
 
   return (
     <div id='table' className="max-w-screen-xl mx-auto mt-8">
@@ -107,13 +81,6 @@ const Submit = () => {
           </tbody>
         </table>
         <div className="mt-4">
-          
-          {/* <button
-            onClick={handleAddUser}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-500 rounded"
-          >
-            Add User
-          </button> */}
         </div>
       </>
     </div>

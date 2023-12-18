@@ -25,7 +25,7 @@ console.log(userFavorites,"ddddddssssss")
   return (
     <div>
       <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">Your Favorites</h2>
+        {/* <h2 className="text-2xl font-bold mb-4">Your Favorites</h2> */}
         <div className="flex flex-wrap justify-center gap-20">
           {userFavorites.map((favorite, index) => (
             <div key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

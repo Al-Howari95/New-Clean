@@ -174,12 +174,18 @@ const Header = () => {
               >
                 Contact
               </Link>
-              {/* <Link
-                to="/BookNow"
+              <Link
+                to="/WhyUse"
                 className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
               >
-                Book now
-              </Link> */}
+                Why Us
+              </Link>
+              <Link
+                to="/FAQS"
+                className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 mr-2"
+              >
+                FAQS
+              </Link>
             </div>
             {/* <Search/> */}
             <div className="flex ">{NavLogin}</div>

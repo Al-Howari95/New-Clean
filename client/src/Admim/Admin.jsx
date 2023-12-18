@@ -10,6 +10,7 @@ import Card1 from "./Card1";
 import Contact from "./Contact";
 import Submit from "./Submit";
 import { Link } from "react-router-dom";
+import FAQS1 from "../Admim/FAQS1";
 
 const Admin = () => {
   const [page, setPage] = useState("profile");
@@ -114,6 +115,13 @@ const Admin = () => {
                 >
                   <span className="flex-1 ms-3 whitespace-nowrap">Submit</span>
                 </button>
+                <button
+                  className="w-full flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-blue-400 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
+                  onClick={() => setPage("FAQS1")}
+                >
+                  <span className="flex-1 ms-3 whitespace-nowrap">FAQS1</span>
+                </button>
+
               </div>
 
               <div className="space-y-3 ">
@@ -152,6 +160,10 @@ const Admin = () => {
         <div className={`${page === "Submit" ? "block" : "hidden"} w-full`}>
           <Submit />
         </div>
+        <div className={`${page === "FAQS1" ? "block" : "hidden"} w-full`}>
+          <FAQS1 />
+        </div>
+
       </div>
     </div>
   );

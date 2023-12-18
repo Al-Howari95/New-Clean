@@ -29,6 +29,10 @@ console.log(wishlist,"ddddddddddddd")
       });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   const toggleWishlist = async (cardId) => {
     if (wishlist.includes(cardId)) {
       try {

@@ -15,6 +15,8 @@ import Detelis1 from "./Pages/Detelis1";
 import Profile from "./Pages/Profile";
 import Admin from "./Admim/Admin";
 import Adminlogin from "./Admim/Adminlogin";
+import WhyUse from "./Pages/WhyUse";
+import FAQS from "./Pages/FAQS";
 
 
 
@@ -53,6 +55,9 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Registration" element={<Registration/>} />
           <Route path="/Adminlogin" element={<Adminlogin/>} />
+          <Route path="/WhyUse" element={<WhyUse/>} />
+          <Route path="/FAQS" element={<FAQS/>} />
+
           
     
         </Routes>
@@ -98,6 +103,10 @@ function App() {
 <Route path="/Login" element={<Login />} />
           <Route path="/Registration" element={<Registration/>} />
           <Route path="/Adminlogin" element={<Adminlogin/>} />
+          <Route path="/WhyUse" element={<WhyUse/>} />
+          <Route path="/FAQS" element={<FAQS/>} />
+
+      
 
 
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import W from '../Pages/W'
 
 
 const AboutUs = () => {
@@ -39,7 +40,9 @@ const AboutUs = () => {
       </div>
     </div>
   </>
-  </div>
+  <W/>
+   </div>
+  
   )
 }
 

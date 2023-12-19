@@ -92,6 +92,8 @@ const WhyUse = () => {
           </div>
         </section>
       </div>
+      <Button/>
+
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className="flex mt-8 space-x-6 text-blue-700">
                   <a
                     className="hover:opacity-75"
-                    href=""
+                    href="https://www.facebook.com/profile.php?id=100088450350482&mibextid=2JQ9oc "
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -54,7 +54,7 @@ const Footer = () => {
                   </a>
                   <a
                     className="hover:opacity-75"
-                    href=""
+                    href="https://www.instagram.com/howari_95/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -74,7 +74,7 @@ const Footer = () => {
                   </a>
                   <a
                     className="hover:opacity-75"
-                    href=""
+                    href="https://twitter.com/InklyReads85433"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -90,7 +90,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div id="iss" className="ml-72">
+              <div id="iss" className="ml-40">
                 <div>
                   <nav className="flex mt-4 space-x-80 text-l text-blue-700 mb-15">
                     <div className="flex flex-col">

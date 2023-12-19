@@ -31,7 +31,7 @@ const Admin = () => {
   };
 
   return (
-    <div className="flex h-full z-50">
+    <div className=" h-full z-50 flex flex-row w-full">
       <div
         className={`fixed w-64 h-full bg-white border-r overflow-y-auto z-10 ${
           isSidebarOpen ? "left-0" : "-left-64"
@@ -139,7 +139,7 @@ const Admin = () => {
       </div>
 
       {/* content */}
-      <div className="flex-1">
+      <div className="w-full flex mx-20 justify-end">
         <div className={`${page === "Dashboard" ? "block" : "hidden"} w-full`}>
           <Dashboard />
         </div>

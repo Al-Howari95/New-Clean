@@ -186,7 +186,7 @@ const Users = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-8">
+    <div className=" mx-auto mt-8">
       <>  
         {/* Render the table with paginated users */}
         <table id='table' className="w-full md:w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 border-collapse block md:table mx-auto mr-auto">
